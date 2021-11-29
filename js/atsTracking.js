@@ -1,5 +1,17 @@
-/* tracking of Page begin
-*/
+// tracking of Page begin
+
+var $page_type = {index.html : “Home”
+destinations.html : “All travels list”
+details.html : “Travel page”
+login.html : “User connection”
+basket.html : “Cart”
+checkout.html : “Delivery”
+thankyou.html : “Confirmation”}
+
+window.dataLayer = window.dataLayer || [];
+window.dataLayer.push({'event': 'page_view', 'page_type':$page_type });
+
+
 
 // tracking of Page end
 
