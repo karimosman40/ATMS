@@ -506,8 +506,13 @@ $(function(){
 
 				$('#paymentMethod').slideDown();
 
-				/* tracking of virtual page view on payment page begin
-				*/
+				
+				window.dataLayer = window.dataLayer || [];
+                                window.dataLayer.push({'event': 'page_view', 'page_type':'Payment','page_name': '/payment.html' });
+
+
+				
+			
 
 				// tracking of virtual page view on payment page end
 				history.pushState({}, 'Payment | ATS Travel Website', 'payment.html');
