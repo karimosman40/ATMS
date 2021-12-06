@@ -114,7 +114,8 @@ $(function(){
 		});
 
 		$("#viewDestination a").on('click',function(e){
-			window.dataLayer.push({'event': 'cta_click', 'click_category':'home', 'click_action': 'click','click_label': 'view destinations' });
+		window.dataLayer.push({'event': 'cta_click', 'click_category':'home', 'click_action': 'click','click_label': 'view destinations' });
+
 			
 
 
